@@ -7,8 +7,7 @@ export default {
     if (url.pathname === '/' || url.pathname === '/index.html') {
       const ua = request.headers.get('User-Agent') ?? '';
       if (MOBILE_RE.test(ua)) {
-        const mobileUrl = new URL('/mobile.html', request.url);
-        return env.ASSETS.fetch(new Request(mobileUrl.toString(), request));
+        return Response.redirect(new URL('/mobile.html', request.url).toString(), 302);
       }
     }
 
