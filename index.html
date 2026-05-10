@@ -4,7 +4,7 @@
   <title>Arne Tonning</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light only" />
+  <meta name="color-scheme" content="light" />
   <meta name="description" content="Arne Tonning - partner at alliance vc, investing in ai, saas & deep tech" />
   <style>
     @font-face {
@@ -12,16 +12,16 @@
       font-style: normal;
       font-display: swap;
       font-weight: 400;
-      src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2) format('woff2'),
-           url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff) format('woff');
+      src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@5.2.5/latin-400-normal.woff2) format('woff2'),
+           url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@5.2.5/latin-400-normal.woff) format('woff');
     }
     @font-face {
       font-family: 'iA Writer Mono';
       font-style: normal;
       font-display: swap;
       font-weight: 700;
-      src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2) format('woff2'),
-           url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff) format('woff');
+      src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@5.2.5/latin-700-normal.woff2) format('woff2'),
+           url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@5.2.5/latin-700-normal.woff) format('woff');
     }
   </style>
   <style>
@@ -43,6 +43,10 @@
       --viewport-height: 100vh;
     }
 
+    @supports (min-height: 100dvh) {
+      :root { --viewport-height: 100dvh; }
+    }
+
     html {
       font-size: 11pt;
       background-color: var(--bg);
@@ -54,6 +58,7 @@
       background-color: var(--bg);
       min-height: var(--viewport-height);
       word-wrap: break-word;
+      overflow-wrap: break-word;
       overflow-x: hidden;
     }
 
@@ -390,48 +395,48 @@
           <h1 id="text01">Arne Tonning</h1>
 
           <p id="text02">
-            <span class="p">I'm a Partner at <a href="https://alliance.vc" target="_blank">Alliance VC</a>.</span>
+            <span class="p">I'm a Partner at <a href="https://alliance.vc" target="_blank" rel="noopener noreferrer">Alliance VC</a>.</span>
             <span class="p companies">Techie turned VC. Still curious. Still a tech optimist. Believer in the entrepreneurial force, risk/reward and free markets.</span>
             <span class="p">I invest in founders building the future.</span>
             <span class="p companies">My investments include:<br />
-              <a href="https://1x.tech" target="_blank">1X</a>,
-              <a href="https://aquabyte.ai" target="_blank">Aquabyte</a>,
-              <a href="https://deckmatch.com" target="_blank">Deckmatch</a>,
-              <a href="https://generalintuition.com" target="_blank">General Intuition</a>/ <a href="https://medal.tv" target="_blank">Medal.tv</a>,
-              <a href="https://globus.ai" target="_blank">Globus.ai</a>,
-              <a href="https://indykite.com" target="_blank">IndyKite</a>,
-              <a href="https://lace.li" target="_blank">Lace Lithography</a>,
-              <a href="https://newcode.ai" target="_blank">Newcode.ai</a>,
-              <a href="https://northern.tech" target="_blank">Northern.tech</a>,
-              <a href="https://scrimba.com" target="_blank">Scrimba</a>,
-              <a href="https://superside.com" target="_blank">Superside</a>,
-              <a href="https://tana.inc" target="_blank">Tana</a>,
-              <a href="https://versiro.com" target="_blank">Versiro</a>
+              <a href="https://1x.tech" target="_blank" rel="noopener noreferrer">1X</a>,
+              <a href="https://aquabyte.ai" target="_blank" rel="noopener noreferrer">Aquabyte</a>,
+              <a href="https://deckmatch.com" target="_blank" rel="noopener noreferrer">Deckmatch</a>,
+              <a href="https://generalintuition.com" target="_blank" rel="noopener noreferrer">General Intuition</a>/ <a href="https://medal.tv" target="_blank" rel="noopener noreferrer">Medal.tv</a>,
+              <a href="https://globus.ai" target="_blank" rel="noopener noreferrer">Globus.ai</a>,
+              <a href="https://indykite.com" target="_blank" rel="noopener noreferrer">IndyKite</a>,
+              <a href="https://lace.li" target="_blank" rel="noopener noreferrer">Lace Lithography</a>,
+              <a href="https://newcode.ai" target="_blank" rel="noopener noreferrer">Newcode.ai</a>,
+              <a href="https://northern.tech" target="_blank" rel="noopener noreferrer">Northern.tech</a>,
+              <a href="https://scrimba.com" target="_blank" rel="noopener noreferrer">Scrimba</a>,
+              <a href="https://superside.com" target="_blank" rel="noopener noreferrer">Superside</a>,
+              <a href="https://tana.inc" target="_blank" rel="noopener noreferrer">Tana</a>,
+              <a href="https://versiro.com" target="_blank" rel="noopener noreferrer">Versiro</a>
             </span>
             <span class="p substack-section">Some writings/ideas from my Substack:
               <ul class="story-list">
-                <li>— <a href="https://eagleonamound.substack.com/p/world-models-will-be-the-llms-for" target="_blank">World Models will be the 'LLMs for reality'</a></li>
-                <li>— <a href="https://eagleonamound.substack.com/p/venture-capital-an-attractive-and-proven-asset-class-for-long-term-financial-returns-c2a5eb762173" target="_blank">VC — an attractive asset class for long-term returns</a></li>
-                <li>— <a href="https://eagleonamound.substack.com/p/fundablebroken-cap-tables" target="_blank">Fundable/broken cap tables</a></li>
+                <li>— <a href="https://eagleonamound.substack.com/p/world-models-will-be-the-llms-for" target="_blank" rel="noopener noreferrer">World Models will be the 'LLMs for reality'</a></li>
+                <li>— <a href="https://eagleonamound.substack.com/p/venture-capital-an-attractive-and-proven-asset-class-for-long-term-financial-returns-c2a5eb762173" target="_blank" rel="noopener noreferrer">VC — an attractive asset class for long-term returns</a></li>
+                <li>— <a href="https://eagleonamound.substack.com/p/fundablebroken-cap-tables" target="_blank" rel="noopener noreferrer">Fundable/broken cap tables</a></li>
               </ul>
             </span>
             <span class="p">This is where you find me:</span>
             <ul class="icons">
               <li>
-                <a href="https://www.linkedin.com/in/arnetonning/" target="_blank" class="accent">
-                  <svg aria-labelledby="linkedin-title"><title id="linkedin-title">LinkedIn</title><use xlink:href="#icon-linkedin"></use></svg>
+                <a href="https://www.linkedin.com/in/arnetonning/" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="linkedin-title"><title id="linkedin-title">LinkedIn</title><use href="#icon-linkedin"></use></svg>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
               <li>
-                <a href="https://eagleonamound.substack.com/" target="_blank" class="accent">
-                  <svg aria-labelledby="substack-title"><title id="substack-title">Substack</title><use xlink:href="#icon-substack"></use></svg>
+                <a href="https://eagleonamound.substack.com/" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="substack-title"><title id="substack-title">Substack</title><use href="#icon-substack"></use></svg>
                   <span class="label">Substack</span>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/eagleonamound" target="_blank" class="accent">
-                  <svg aria-labelledby="twitter-title"><title id="twitter-title">Twitter</title><use xlink:href="#icon-twitter"></use></svg>
+                <a href="https://twitter.com/eagleonamound" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="twitter-title"><title id="twitter-title">Twitter</title><use href="#icon-twitter"></use></svg>
                   <span class="label">Twitter</span>
                 </a>
               </li>
@@ -439,20 +444,20 @@
             <span class="p">This is where you find Alliance VC:</span>
             <ul class="icons">
               <li>
-                <a href="https://alliance.vc" target="_blank" class="accent">
-                  <svg aria-labelledby="allianceweb-title"><title id="allianceweb-title">Alliance VC</title><use xlink:href="#icon-globe"></use></svg>
+                <a href="https://alliance.vc" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="allianceweb-title"><title id="allianceweb-title">Alliance VC</title><use href="#icon-globe"></use></svg>
                   <span class="label">Alliance VC</span>
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/alliance-venture" target="_blank" class="accent">
-                  <svg aria-labelledby="allianceli-title"><title id="allianceli-title">Alliance VC LinkedIn</title><use xlink:href="#icon-linkedin"></use></svg>
+                <a href="https://www.linkedin.com/company/alliance-venture" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="allianceli-title"><title id="allianceli-title">Alliance VC LinkedIn</title><use href="#icon-linkedin"></use></svg>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/alliance-venture" target="_blank" class="accent">
-                  <svg aria-labelledby="alliancemed-title"><title id="alliancemed-title">Alliance VC Medium</title><use xlink:href="#icon-medium"></use></svg>
+                <a href="https://medium.com/alliance-venture" target="_blank" rel="noopener noreferrer" class="accent">
+                  <svg aria-labelledby="alliancemed-title"><title id="alliancemed-title">Alliance VC Medium</title><use href="#icon-medium"></use></svg>
                   <span class="label">Medium</span>
                 </a>
               </li>
