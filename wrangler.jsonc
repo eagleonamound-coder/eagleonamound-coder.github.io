@@ -8,9 +8,15 @@
   },
   "assets": {
     "directory": ".",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
+  "workers_dev": true,
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  "routes": [
+    { "pattern": "eagleonamound.com/*", "zone_name": "eagleonamound.com" },
+    { "pattern": "www.eagleonamound.com/*", "zone_name": "eagleonamound.com" }
   ]
 }

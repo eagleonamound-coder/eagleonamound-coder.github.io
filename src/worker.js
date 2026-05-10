@@ -7,7 +7,13 @@ export default {
     if (url.pathname === '/' || url.pathname === '/index.html') {
       const ua = request.headers.get('User-Agent') ?? '';
       if (MOBILE_RE.test(ua)) {
-        return Response.redirect(new URL('/mobile.html', request.url).toString(), 302);
+        return new Response(null, {
+          status: 302,
+          headers: {
+            'Location': new URL('/mobile.html', request.url).toString(),
+            'Cache-Control': 'no-store',
+          },
+        });
       }
     }
 
